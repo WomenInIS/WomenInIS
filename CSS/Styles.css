@@ -256,6 +256,10 @@ h1 {
         margin-right: auto;
         margin-left: auto;
     }
+
+    .text-uppercase {
+        text-align: center;
+    }
 }
 
 

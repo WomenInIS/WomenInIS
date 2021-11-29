@@ -284,6 +284,10 @@ h1 {
         width: 40%;
     }
 
+    .text-uppercase {
+        text-align: center;
+    }
+
 }
 
 
