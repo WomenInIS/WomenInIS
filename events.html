@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Women In IS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="CSS/events-styles.css"/>
+
+
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <!-- From https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body onload="reset()">
+        <!-- navigation bar -->
+        <div class="container-fluid">
+ 
+            <div class="navbar row topnav">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <a href="index.html" class="nostyle active "><img id="logo" src="images/newlogo.png"></a>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-10 col-xs-2" id="navTitle">
+                    <a href="index.html" class="nostyle"><h1>Women in IS <br>Peer Mentoring Program</br></h1></a>
+                </div>
+
+
+                <div class="col-lg-8 col-md-8 col-sm-0 text-nowrap bar" id="navLinks">
+                    <div class="nav justify-content-center" id="removeCenter">
+                        
+                        <a class="nav-link text-white navLink"  href="index.html">About Us</a>
+                            
+                            
+                        <a class="nav-link text-white navLink" href="events.html">Events</a>
+                    
+                    
+                        <a class="nav-link text-white navLink" href="#Specialties">Mentors & Mentees</a>
+                    
+                    
+                        <a class="nav-link text-white navLink" href="#Specialties">Resources</a>
+                    
+                    
+                        <a class="nav-link text-white navLink" href="getinvolved.html">Get Involved</a>
+                    
+                
+                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                        <!--from https://www.w3schools.com/howto/howto_css_menu_icon.asp-->
+                        <a href="javascript:void(0);" class="icon" id="hamburger" onclick="hideOrUnhide()">
+                        <div class="container" id="hamburger_bars" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end navigation bar -->
+ 
+
+        <br><br>
+        <!-- event calendar -->
+        <div >
+            <div class="row text-center">
+                <h2 id="event_calendar"><span>Event Calendar</span></h2>
+            </div>
+            
+            <!-- First event row-->
+            <div class="row">
+                <div class="col">
+                    <div class="row no_bottom">
+
+                        <!-- Display is removed for small screens -->
+                        <div class="col container display_change" id="display_none">
+                            <div class = "center-button">
+                                <div class="row inline">
+                                    <h4 class = "text-center remove_margin" >OCT</h4>
+                                </div>
+                                <div class="row inline">
+                                    <h2 class = "text-center remove_margin" id="event_day">22</h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hidden by default, Shows up for small screen -->
+                        <div class="col container display_date" id="display">
+                            <div class="row">
+                                <h4 class = "text-center" >OCTOBER 22</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-sm-6">
+                            <div class="row">
+                                <h4 class = "text-center" id="event_title">Women in IS Professional Development</h4>
+                            </div>
+                            <div class="row">
+                                <p class="event_descrip">Please join us on Friday, October 22 from 4:00-6:00 p.m. for our Women in IS Professional Development Event. Kristin Staunton from the Career and Professional Development Center will be there to talk to you all about a range of career building topics. We are also fortunate to have Career Peer Mentors at the event providing personalized guidance!<br><br> Space is limited so please be sure to RSVP by October 19. We hope to see you there!</p>
+                            </div>
+                        </div>
+
+                        <div class="col text-center container">
+                            <div class='center-button'>
+                                <a href="http://tinyurl.com/WIISprodev" target="_blank"><button onclick="changeColor('rsvp')" type="button" class="col-fluid btn blue_bg text-white fw-bold event_button">RSVP</button></a>
+                            </div>  
+                        </div>
+
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <!-- end First event row-->
+
+            <!-- Second event row-->
+            <div class="row">
+                <div class="col">
+                    <div class="row no_bottom">
+
+                        <div class="col container" id="display_none2">
+                            <div class = "center-button" >
+                                <div class="row">
+                                    <h4 class = "text-center remove_margin">NOV</h4>
+                                </div>
+                                <div class="row ">
+                                    <h2 class = "text-center remove_margin" id="event_day">25</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Hidden by default, Shows up for small screen -->
+                        <div class="col container display_date" id="display2">
+                            <div class="row">
+                                <h4 class = "text-center" >NOVEMBER 22</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-sm-6">
+                            <div class="row">
+                                <h4 class = "text-center" id="event_title">Mentorship Event</h4>
+                            </div>
+                            <div class="row">
+                                <p class="event_descrip">Join Women in IS for a chat with our women faculty! Hear their stories, learn about their journeys, and about the mentors that helped them get to where they are now.</p>
+                            </div>
+                        </div>
+
+                        <div class="col text-center container">
+                            <div class='center-button'>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMuyApc0vkztDYRdTCgxbYRQySQs0w15eAxi9G8xZ6XuOUyQ/viewform" target="_blank"><button onclick="changeColor('rsvp')" type="button" class="col-fluid btn blue_bg text-white fw-bold event_button">RSVP</button></a>
+                            </div>  
+                        </div>
+
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <!-- end Second event row-->
+
+             <!-- third event row-->
+             <div class="row">
+                <div class="col">
+                    <div class="row no_bottom">
+
+                        <div class="col container" id="display_none3">
+                            <div class = "center-button" >
+                                <div class="row">
+                                    <h4 class = "text-center remove_margin">DEC</h4>
+                                </div>
+                                <div class="row ">
+                                    <h2 class = "text-center remove_margin" id="event_day">03</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Hidden by default, Shows up for small screen -->
+                         <div class="col container display_date" id="display3">
+                            <div class="row">
+                                <h4 class = "text-center" >DECEMBER 03</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-8 col-sm-6">
+                            <div class="row">
+                                <h4 class = "text-center" id="event_title">End of Year Celebration</h4>
+                            </div>
+                            <div class="row">
+                                <p class="event_descrip">Save the date because on Friday December 3rd at 4:30pm Women in IS will be having an end of the year celebration. Fun snacks, photo opportunities, and winter crafts will be present, location TBD. Please RSVP at the button, more information to come soon. </p>
+                            </div>
+                        </div>
+
+                        <div class="col text-center container">
+                            <div class='center-button'>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc3dq2eo2XTfn6X9K1p4_88D4QNKENqmlGW9ILg6Ku221UMw/viewform?usp=sf_link" target="_blank"><button onclick="changeColor('rsvp')" type="button" class="col-fluid btn blue_bg text-white fw-bold event_button">RSVP</button></a>
+                            </div>  
+                        </div>
+
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <!-- end third event row-->
+
+        </div>
+
+
+        
+        <div id="carouselbackground">
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <h2>Check Out Our Past Events</h2>
+                <br>
+    
+                    
+                <div class="row">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-10">
+                        
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" class="carousel_margin">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Images/MeetAndGreet1.jpg" height-lg=672 width-lg=504 class="d-block w-100" class="carousel_picture_size" alt="Meet and Greet Picture">
+                                    <div class="carousel-caption d-none d-lg-block bg-secondary">
+                                        <h5>Professional Development Meet and Greet</h5>
+                                        <p>Loved spending our Friday afternoon with these Women in IS! We talked resume building, networking, job searching, and interviews. Supporting each other and growing together!</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/Museum1.jpg" height-lg=672 width-lg=504 class="d-block w-100" alt="Group Museum Visit Picture 1">
+                                    <div class="carousel-caption d-none d-lg-block bg-secondary">
+                                        <h5>Carnegie Museum Visit</h5>
+                                        <p>Many mentors and mentees of the Women In IS program had a great time at the Carnegie Museum of Art and Natural History. Friendships were made over the exploration of art and culture!</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/Museum2.jpg" height-lg=672 width-lg=504 class="d-block w-100" alt="Group Museum Visit Picture 2">
+                                    <div class="carousel-caption d-none d-lg-block bg-secondary">
+                                        <h5>Carnegie Museum Visit</h5>
+                                        <p>Members of the program study culture intensely, with works from John Whitney and George Landow behind them.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/Museum3.jpg" height-lg=672 width-lg=504 class="d-block w-100" alt="Group Museum Visit Picture 3">
+                                    <div class="carousel-caption d-none d-lg-block bg-secondary">
+                                        <h5>Carnegie Museum Visit</h5>
+                                        <p>Our members pose at the famous entrance and fountain outside of the museum. Can't wait to visit again on a warmer day! </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Images/Museum4.jpg" height-lg=672 width-lg=504 class="d-block w-100" alt="Group Museum Visit Picture 4">
+                                    <div class="carousel-caption d-none d-lg-block bg-secondary">
+                                        <h5>Carnegie Museum Visit</h5>
+                                        <p>Our members pose under a painting created by Pittsburgh born, world famous Andry Warhol. Pittsburgh has such talent!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                
+                    </div>
+                    <div class="col-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <footer class="footer">
+            <!-- Grid container -->
+            <div class="container p-4">
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-10 col-md-10 mb-4 mb-md-0">
+                    <br>
+                    <h5 class="text-uppercase"><b>Contact Us</b></h5>
+                    <br>
+                    <p>Correy Dandoy | correy@cmu.edu</p>
+                    <p>Brandy Wilson | brandyw@andrew.cmu.edu </p>
+                    <p>Information Systems Info | isinfo@andrew.cmu.edu</p>
+                </div>
+                <!--Grid column-->
+          
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+                    <img class="homepagefooter" src="Images/SmallLogo.png" alt="Women In IS Peer Mentoring Program" width="193" height="209.5">
+                    
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="Scripts/events-scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,513 @@
+/* CSS is sorted alphabetically by tag, class and id
+*/
+
+/* Tag styling
+*/
+
+body {
+    background-color: white;
+    font: Roboto;
+
+}
+
+
+button{
+    color:white;
+}
+
+
+div{
+    padding:.5em 0em .5em 0em;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    margin-top:2%;
+    font-size: 120%;
+    margin-left:-5%;
+}
+
+
+
+/* Class styling
+*/
+.bar {
+    padding-left: 8%;
+}
+.blue{
+    color:#60C2E4;
+}
+
+.blue_bg{
+    background-color:#60C2E4;
+}
+
+.col-5 {
+    padding-left: 5%;
+    padding-right: 7.5%;
+    
+}
+
+.container-fluid {
+    padding:0px;
+}
+
+.firstquote {
+    padding:4.2%;
+    height:83%;
+    margin:5%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.green{
+    color:#60C2E4;
+}
+.navbar {
+    background-color:black;
+  }
+.no_bottom{
+    padding-bottom:0em;
+}
+
+.nostyle{
+    text-decoration:none;
+}
+
+.remove_padding{
+    padding:0em;
+}
+
+.homepageimg {
+    display:block;
+    margin:auto;
+    width:70%;
+    margin-top: 10%;
+}
+
+.studentquotes { 
+    padding:4%;
+    background-color: #eff3f4;
+}
+
+.quote { 
+    padding:3%;
+    margin:5%;
+}
+
+
+
+/* ID styling
+*/
+
+#date_container{
+    width:5em;
+}
+#event_date{
+    padding-top:.25em;
+}
+#event_img{
+    padding-bottom:5em;
+}
+#event_name{
+    padding-bottom: 1em;
+}
+
+#event_title{
+    padding-top:.75em;
+}
+#event_url{
+    text-decoration:underline;
+}
+#event_url:hover{
+    color:#60C2E4;
+}
+
+#GetInvolvedBackground {
+    background-color:#e5e5e5;
+}
+
+#GetInvolvedCMU {
+    margin-left: 20%;
+}
+
+#linkGetInTouch {
+    text-decoration: none;
+    background-color: #60C2E4;
+    color: white;
+    padding: 3pt;
+    border: 3pt solid #60C2E4;
+    margin-left: 0%;
+    margin-right: auto;
+    margin-top: 0%;
+}
+
+#hamburger{
+    display: none;
+}
+
+#hamburger_bars{
+    padding-top:1.5em;
+}
+
+#homepageIntro {
+    margin:auto;
+    padding:0em 3em 2em 0em;
+}
+
+#homepageTitle {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 15%;
+}
+
+#info_container{
+    padding:1em 3em 1em 4em;
+}
+
+#logo {
+    width: 40%;
+    height: 13%;
+    margin-left:30%;
+}
+
+#mylink {
+    text-decoration: none;
+    background-color: #60C2E4;
+    color: white;
+    padding: 3pt;
+    border: 3pt solid #60C2E4;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-top: 2.5%;
+}
+
+#rsvp_button{
+    margin-top:2em;
+    width:12em;
+}
+
+#upcoming_events{
+    padding:1em 5em 1em 5em;
+}
+
+#upcoming_title{
+    padding-top:1em;
+    padding-bottom:1em;
+}
+
+/* styling hamburger icon bars */
+/* https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+
+.bar1, .bar2, .bar3 {
+    padding: .1em 0em .1em 0em;
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* creates animation of icon turning into x */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-7px, 8px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-4px, -7px);
+  }
+
+  
+
+/* media queries */
+/* Large screens */
+@media only screen and (min-width: 1101px) {
+    /*make sure links appear again when screen is resized from small to medium/large */
+    .nav-link{
+        display:inline !important;
+        }
+
+}
+
+@media only screen and (max-width: 992px) {
+    #info_container{
+        padding:1em 0em 0em 2em;
+    }
+  }
+
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    h1 {
+        font-size:80%;
+    }
+    #logo{
+        width: 40%;
+    }
+    .navLink {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h2, h3,h4,p, .buttons{
+        text-align:center;
+    }
+    #info_container{
+        padding:0em;
+    }
+    #event_name{
+        padding-top: 2em;
+    }
+    #calendar_button{
+        margin-bottom:5em;
+    }
+}
+
+
+
+
+
+
+
+
+/* Medium screens */
+@media only screen and (min-width: 641px) and (max-width: 1100px) {
+    .homepageimg {
+        max-height: 75%;
+        max-width: 75%;
+        margin-left: 15%;
+        margin-top: 30%;
+        
+    }
+
+    #homepageIntro {
+        padding:0em 2em 2em 2em;
+    }
+
+    /*make sure links appear again when screen is resized from small to medium/large */
+    .nav-link{
+        display:inline !important;
+        }
+    
+}
+/* Small screens */
+@media only screen and (max-width: 640px) { 
+    h1 {
+        font-size: 80%;
+        margin-left:3%;
+    }
+
+    .homepageimg {
+        max-height: 75%;
+        max-width: 75%;
+        margin-left: 15%;
+        margin-top: 10%;
+        
+    }
+
+    
+   
+    .studentquotes {
+        font-size: 80%;
+    }
+
+    #homepageIntro {
+        padding:0em 2em 2em 2em;
+    }
+
+    #logo{
+        width:80%;
+        margin-left: 28%;
+        padding: 3%;
+    }
+
+    /*  from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+    /* Style the navigation menu */
+    .navbar {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .navbar #navLink, #navTitle  {
+    display: none ;
+  }
+  
+  /* Style navigation menu links */
+  .navbar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .navbar a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-link{
+    display:none;
+
+    }
+    .navLink {
+        display:none; 
+
+    }
+ 
+  
+  #hamburger{
+    display:block;
+  }
+  
+  #navLinks, #removeCenter{
+    padding:0em;
+  }
+
+}
+/* smallest screen */
+@media screen and (max-width: 576px) {
+    #logo{
+        width:10%;
+        display:inline;
+        margin-left:8%;
+        padding:0%;
+    }
+
+    h1 {
+        display:none;
+    }
+}
+
+
+
+
+
+.bar {
+    padding-left: 8%;
+}
+
+.one {
+    margin: auto;
+    display: block;
+    padding-top:25%;
+    padding-right:10%;
+    padding-left:10%;
+    min-width: 100%;
+}
+
+.getinvolved {
+    color:black;
+    font-size: 250%;
+}
+
+.top {
+    padding:5%;
+}
+
+.topsection {
+    background-color: rgb(231, 231, 231);
+}
+
+table {
+    width:100%;
+}
+
+tr {
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 2%;
+    font-size:120%;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    h1 {
+        font-size:80%;
+    }
+
+    img {
+        width: 40%;
+    }
+
+    .nav-item {
+        font-size: 70%;
+    }
+
+    .one {
+        margin: auto;
+        display: block;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 0%;
+        min-width: 100%;
+    }
+}
+
+/*small screen*/
+@media screen and (max-width: 640px) {
+    .studentquotes {
+        font-size: 80%;
+    }
+
+    h1 {
+        font-size: 80%;
+        margin-left:3%;
+    }
+
+    img {
+        width:80%;
+        margin-left: 28%;
+        padding: 3%;
+    }
+
+    .nav-item {
+        display:none;
+    }
+
+    .one {
+        margin: auto;
+        display: block;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 0%;
+        min-width: 100%;
+    }
+}
+
+/* smallest screen */
+@media screen and (max-width: 575px) {
+    img {
+        width:10%;
+        display:inline;
+        margin-left:8%;
+        padding:0%;
+    }
+
+    h1 {
+        display:none;
+    }
+    .one {
+        margin: auto;
+        display: block;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 0%;
+        min-width: 100%;
+    }
+}
+

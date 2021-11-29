@@ -1,0 +1,343 @@
+/* CSS is sorted alphabetically by tag, class and id
+*/
+
+/* Tag styling
+*/
+
+body {
+    background-color: white;
+    font: Roboto;
+
+}
+
+
+button{
+    color:white;  
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+div{
+    padding:.5em 0em .5em 0em;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    margin-top:2%;
+    font-size: 120%;
+    margin-left:-5%;
+}
+
+
+
+/* Class styling
+*/
+.bar {
+    padding-left: 8%;
+}
+
+.blue{
+    color:#60C2E4;
+}
+
+.blue_bg{
+    background-color:#60C2E4;
+}
+
+.col-5 {
+    padding-left: 5%;
+    padding-right: 7.5%;
+    
+}
+
+.center-button {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container {
+display: table;
+width:100%;
+}
+
+.container-fluid {
+    padding:0px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.green{
+    color:#60C2E4;
+}
+
+.navbar {
+    background-color:black;
+}
+
+.no_bottom{
+    padding-bottom:0em;
+}
+
+.nostyle{
+    text-decoration:none;
+}
+.remove_margin{
+    margin:0em;
+}
+.remove_padding{
+    padding:0em;
+}
+
+
+
+
+
+/* ID styling
+*/
+
+#carouselbackground {
+    background-color:#e5e5e5;
+}
+
+#display, #display2, #display3{
+    display:none;
+}
+
+#event_calendar {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+ #event_calendar span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+ #event_day {
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+
+ #event_month{
+     padding:0em;
+     margin:0em;
+ }
+
+#hamburger{
+    display: none;
+}
+
+#hamburger_bars{
+    padding-top:1.5em;
+}
+
+
+#logo {
+    width: 40%;
+    height: 13%;
+    margin-left:30%;
+}
+
+#mylink {
+    text-decoration: none;
+    background-color: #60C2E4;
+    color: white;
+    padding: 3pt;
+    border: 3pt solid #60C2E4;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-top: 2.5%;
+}
+
+
+/* styling hamburger icon bars */
+/* https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+
+.bar1, .bar2, .bar3 {
+    padding: .1em 0em .1em 0em;
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* creates animation of icon turning into x */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-7px, 8px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-4px, -7px);
+  }
+
+  
+
+/* media queries */
+/* Large screens */
+@media only screen and (min-width: 1101px) {
+    
+    .carousel-item {
+        width: 100%;
+        height: 75%;
+    }/*make sure links appear again when screen is resized from small to medium/large */
+    .nav-link{
+        display:inline !important;
+        }
+
+}
+
+@media only screen and (max-width: 992px) {
+    #info_container{
+        padding:1em 0em 0em 2em;
+    }
+  }
+
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+    h1 {
+        font-size:80%;
+    }
+    #logo{
+        width: 40%;
+    }
+    .navLink {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h2, h3,h4,p, .buttons{
+        text-align:center;
+    }
+    #info_container{
+        padding:0em;
+    }
+     
+
+}
+
+
+
+
+
+/* Medium screens */
+@media only screen and (min-width: 641px) and (max-width: 1100px) {
+    .carousel-item {
+        width: 100%;
+        height: 75%;
+    }
+    
+    /*make sure links appear again when screen is resized from small to medium/large */
+    .nav-link{
+        display:inline !important;
+        }
+    
+}
+/* Small screens */
+@media only screen and (max-width: 640px) { 
+    h1 {
+        font-size: 80%;
+        margin-left:3%;
+    }
+
+    #logo{
+        width:80%;
+        margin-left: 28%;
+        padding: 3%;
+    }
+
+    .carousel-item {
+        width: 100%;
+        height: 75%;
+    }
+
+    /*from  from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  */
+    /* Style the navigation menu */
+    .navbar {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .navbar #navLink, #navTitle {
+    display: none ;
+  }
+  
+  /* Style navigation menu links */
+  .navbar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .navbar a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-link{
+    display:none;
+
+    }
+    .navLink {
+        display:none; 
+    }
+  
+  #hamburger{
+    display:block;
+  }
+  #navLinks, #removeCenter{
+    padding:0em;
+  }
+}
+/* smallest screen */
+@media screen and (max-width: 576px) {
+    #logo{
+        width:10%;
+        display:inline;
+        margin-left:8%;
+        padding:0%;
+    }
+
+    h1 {
+        display:none;
+    }
+    .event_descrip{
+        padding-left:2em;
+        padding-right:2em;
+    }
+   
+    #display, #display2, #display3{
+        display:block;
+    }
+    #display_none, #display_none2, #display_none3{
+        display:none;
+    }
+    
+
+}
+
+          
+          
+  
+ 
+
+  

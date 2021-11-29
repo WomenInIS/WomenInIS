@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="CSS/getinvolved-styles.css" type="text/css" rel="stylesheet"/>
+</head>
+
+
+<body onload="reset()">
+<!-- navigation bar -->
+<div class="container-fluid">
+ 
+    <div class="navbar row topnav">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <a href="index.html" class="nostyle active "><img id="logo" src="images/newlogo.png"></a>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-10 col-xs-2" id="navTitle">
+            <a href="index.html" class="nostyle"><h1>Women in IS <br>Peer Mentoring Program</br></h1></a>
+        </div>
+
+
+        <div class="col-lg-8 col-md-8 col-sm-0 text-nowrap bar" id="navLinks">
+            <div class="nav justify-content-center" id="removeCenter">
+                
+                <a class="nav-link text-white navLink"  href="index.html">About Us</a>
+                    
+                    
+                <a class="nav-link text-white navLink" href="events.html">Events</a>
+            
+            
+                <a class="nav-link text-white navLink" href="#Specialties">Mentors & Mentees</a>
+            
+            
+                <a class="nav-link text-white navLink" href="#Specialties">Resources</a>
+            
+            
+                <a class="nav-link text-white navLink" href="getinvolved.html">Get Involved</a>
+            
+        
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <!--from https://www.w3schools.com/howto/howto_css_menu_icon.asp-->
+                <a href="javascript:void(0);" class="icon" id="hamburger" onclick="hideOrUnhide()">
+                <div class="container" id="hamburger_bars" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- end navigation bar -->
+        
+<!-- get involved -->
+<div class="container-fluid topsection">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 top">
+            <h2 class="getinvolved">Get Involved</h2>
+            <br>
+            <h2>Mentor Requirements</h2>
+            <p>Any current freshman, sophomore, or junior woman majoring in Information Systems may apply to serve as a mentor in the program.</p>
+            <br>
+            <p>Mentors will play a vital role in assisting first-year students adjust to and engage with the CMU and IS communities. Responsibilities include:</p>
+            <ul>
+                <li>Initiate contact with mentee(s) within 10 days of being matched</li>
+                <li>Maintain at least bi-weekly contact with mentee(s) (can be via email, phone, Zoom or in person).</li>
+                <li>Attend at least one IS program event each month (these include social events, speakers, outings, etc.)</li>
+                <li>Attend at least one university sponsored event with your mentee(s) each semester.</li>
+                <li>Stay in contact with the IS academic advisors as needed.</li>
+                <li>Complete an end-of-semester assessment.</li>
+            </ul>
+            <br>
+            <h2>Mentee Requirements</h2>
+            <p>Any incoming first year or transfer CMU student who is majoring in Information Systems may apply to become a mentee. </p>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <img src="Images/museum_group.jpg" class="img-fluid one" alt="Responsive image">
+        </div>
+    </div>
+</div>
+
+<!-- application timeline -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <br>
+            <h2 class="text-center">Application Timeline</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <table class="text-center">
+                <tr>
+                  <td>Tuesday, January 25th</td>
+                  <td>Mentor Applications Open</td>
+                </tr>
+
+                <tr>
+                  <td>Thursday, Feburary 27th</td>
+                  <td>Mentor Applications Close</td>
+                </tr>
+
+                <tr>
+                    <td>Friday, August 28th</td>
+                    <td>Mentor Applications Open</td>
+                </tr>
+
+                <tr>
+                    <td>Sunday, September 6th</td>
+                    <td>Mentor Applications Close</td>
+                 </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<div id="GetInvolvedBackground">
+    <div class="container" >
+        <div class="row" >
+            <div class="col-lg-6 col-md-12 col-sm-12">
+
+                <br>
+
+                <h2>Get In Touch</h2>
+
+                <br>
+
+                <p>Please fill out this form if you have any questions, concerns, or comments or would like to learn more about the program.</p>
+
+                <br>
+                
+                <a id="linkGetInTouch" href="https://www.cmu.edu/information-systems/current-students/ispeermentoringinfo.html#:~:text=The%20Women%20in%20IS%20Peer,community%20and%20as%20they%20develop"><b>Google Form</b></a>
+
+                <br>
+                <br>
+
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+
+                <br>
+
+                <img id="GetInvolvedCMU" src="Images/CMU3.png" alt="Carnegie Mellon University" width="275.5" height="188">
+
+                <br>
+                <br>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+  
+<script type="text/javascript" src="Scripts/scripts.js"></script>
+
+</body>
+</html>
