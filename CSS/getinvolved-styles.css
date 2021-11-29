@@ -7,7 +7,6 @@
 body {
     background-color: white;
     font: Roboto;
-
 }
 
 
@@ -131,10 +130,6 @@ h1 {
     background-color:#e5e5e5;
 }
 
-#GetInvolvedCMU {
-    margin-left: 20%;
-}
-
 #linkGetInTouch {
     text-decoration: none;
     background-color: #60C2E4;
@@ -235,12 +230,18 @@ h1 {
         display:inline !important;
         }
 
+        #GetInvolvedCMU {
+            margin-left: 50%;
+        }
+        
+
 }
 
 @media only screen and (max-width: 992px) {
     #info_container{
         padding:1em 0em 0em 2em;
     }
+    
   }
 
 @media only screen and (min-width: 641px) and (max-width: 991px) {
@@ -253,6 +254,7 @@ h1 {
     .navLink {
         font-size: 70%;
     }
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -268,6 +270,7 @@ h1 {
     #calendar_button{
         margin-bottom:5em;
     }
+
 }
 
 
@@ -295,6 +298,12 @@ h1 {
     .nav-link{
         display:inline !important;
         }
+
+    #GetInvolvedCMU {
+        display: block;
+        margin-left: 40%;
+    }
+        
     
 }
 /* Small screens */
@@ -311,8 +320,6 @@ h1 {
         margin-top: 10%;
         
     }
-
-    
    
     .studentquotes {
         font-size: 80%;
@@ -375,6 +382,23 @@ h1 {
     padding:0em;
   }
 
+  #GetInvolvedCMU {
+    width: 75%;
+    height: 75%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    #linkGetInTouch {
+        display: block;
+        margin-left: 37.5%;
+        margin-right: 37.5%;
+        text-align: center;
+    }
+
+    
+
 }
 /* smallest screen */
 @media screen and (max-width: 576px) {
@@ -388,6 +412,15 @@ h1 {
     h1 {
         display:none;
     }
+
+    #GetInvolvedCMU {
+        width: 75%;
+        height: 75%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
 
 
@@ -456,6 +489,21 @@ td {
         padding-top: 0%;
         min-width: 100%;
     }
+
+    #GetInvolvedCMU {
+        width: 40%;
+        height: 70%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #linkGetInTouch {
+        display: block;
+        margin-left: 37.5%;
+        margin-right: 37.5%;
+        text-align: center;
+    }
 }
 
 /*small screen*/
@@ -487,6 +535,20 @@ td {
         padding-top: 0%;
         min-width: 100%;
     }
+
+    #GetInvolvedCMU {
+        display: block;
+        width: 45%;
+        height: 75%;
+    }
+
+    #linkGetInTouch {
+        display: block;
+        margin-left: 37.5%;
+        margin-right: 37.5%;
+        text-align: center;
+    }
+    
 }
 
 /* smallest screen */
@@ -508,6 +570,21 @@ td {
         padding-left: 5%;
         padding-top: 0%;
         min-width: 100%;
+    }
+
+    #GetInvolvedCMU {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: 70%;
+    }
+
+    #linkGetInTouch {
+        display: block;
+        margin-left: 37.5%;
+        margin-right: 37.5%;
+        text-align: center;
     }
 }
 
