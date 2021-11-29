@@ -256,8 +256,8 @@ h1 {
     }
 
     .homepagefooter {
-        height: 110%;
-        width: 170%;
+        height: 100%;
+        width: 180%;
     }
     
 }
@@ -280,8 +280,8 @@ h1 {
         display: block;
         margin-right: auto;
         margin-left: auto;
-        height: 80%;
-        width: 50%;
+        height: 100%;
+        width: 40%;
     }
 
 }
@@ -564,8 +564,8 @@ td {
     }
 
     .homepagefooter {
-        height: 80%;
-        width: 50%;
+        height: 100%;
+        width: 40%;
     }
     
 }
@@ -610,8 +610,8 @@ td {
         display: block;
         margin-right: auto;
         margin-left: auto;
-        height: 80%;
-        width: 50%;
+        height: 100%;
+        width: 40%;
     }
 }
 
