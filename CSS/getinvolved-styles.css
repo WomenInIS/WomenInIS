@@ -254,6 +254,11 @@ h1 {
     .navLink {
         font-size: 70%;
     }
+
+    .homepagefooter {
+        height: 110%;
+        width: 170%;
+    }
     
 }
 
@@ -269,6 +274,14 @@ h1 {
     }
     #calendar_button{
         margin-bottom:5em;
+    }
+
+    .homepagefooter {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        height: 80%;
+        width: 50%;
     }
 
 }
@@ -504,6 +517,7 @@ td {
         margin-right: 37.5%;
         text-align: center;
     }
+
 }
 
 /*small screen*/
@@ -548,6 +562,11 @@ td {
         margin-right: 37.5%;
         text-align: center;
     }
+
+    .homepagefooter {
+        height: 80%;
+        width: 50%;
+    }
     
 }
 
@@ -585,6 +604,14 @@ td {
         margin-left: 37.5%;
         margin-right: 37.5%;
         text-align: center;
+    }
+
+    .homepagefooter {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        height: 80%;
+        width: 50%;
     }
 }
 

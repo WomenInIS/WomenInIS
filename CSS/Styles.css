@@ -250,6 +250,12 @@ h1 {
     #calendar_button{
         margin-bottom:5em;
     }
+
+    .homepagefooter {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 
@@ -357,6 +363,7 @@ h1 {
     padding:0em;
   }
 
+
 }
 /* smallest screen */
 @media screen and (max-width: 576px) {
@@ -370,4 +377,5 @@ h1 {
     h1 {
         display:none;
     }
+
 }

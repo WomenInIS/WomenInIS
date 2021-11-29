@@ -225,6 +225,12 @@ width:100%;
     #info_container{
         padding:0em;
     }
+
+    .homepagefooter {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
      
 
 }
