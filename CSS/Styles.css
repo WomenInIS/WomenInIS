@@ -384,4 +384,10 @@ h1 {
         display:none;
     }
 
+    .homepagefooter {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
