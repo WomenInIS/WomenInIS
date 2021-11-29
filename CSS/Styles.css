@@ -300,6 +300,12 @@ h1 {
         
     }
 
+    .homepagefooter {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     
    
     .studentquotes {
