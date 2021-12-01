@@ -317,6 +317,7 @@ width:100%;
   #navLinks, #removeCenter{
     padding:0em;
   }
+  
 }
 /* smallest screen */
 @media screen and (max-width: 576px) {

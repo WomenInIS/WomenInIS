@@ -142,9 +142,11 @@ h1 {
 }
 
 #homepageTitle {
-    margin-left: 2.5%;
+    margin-left: 0%;
     margin-right: 2.5%;
-    margin-top: 15%;
+    margin-top: 0%;
+    color: black;
+    font-size: 25px;
 }
 
 #info_container{
@@ -235,6 +237,7 @@ h1 {
     .navLink {
         font-size: 70%;
     }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -260,6 +263,13 @@ h1 {
     .text-uppercase {
         text-align: center;
     }
+
+    #homepageTitle {
+        text-align: center;
+    }
+
+    
+    
 }
 
 
@@ -280,7 +290,7 @@ h1 {
     }
 
     #homepageIntro {
-        padding:0em 2em 2em 2em;
+        padding:0em 2em 2em 0em;
     }
 
     /*make sure links appear again when screen is resized from small to medium/large */
@@ -374,6 +384,7 @@ h1 {
   }
 
 
+
 }
 /* smallest screen */
 @media screen and (max-width: 576px) {
@@ -394,4 +405,10 @@ h1 {
         margin-left: auto;
     }
 
+}
+
+@media only screen and (max-width: 768px) {
+    #homepageIntro {
+        padding:0em 2em 2em 2em;
+    }
 }
